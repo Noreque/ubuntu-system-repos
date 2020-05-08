@@ -1,0 +1,27 @@
+---
+# tasks file for noreque-ubuntu-repos-system
+
+- name: Add Apt-Fast repository
+  apt_repository:
+    repo: ppa:apt-fast/stable
+    state: present
+
+- name: Add UNetbootin repository
+  apt_repository:
+    repo: ppa:gezakovacs/ppa
+    state: present
+
+- name: Add Flatpak repository
+  apt_repository:
+    repo: ppa:alexlarsson/flatpak
+    state: present
+
+- name: Add Grub-customizer repository
+  apt_repository:
+    repo: ppa:danielrichter2007/grub-customizer
+    state: present
+
+- name: Add TLP repository
+  apt_repository:
+    repo: ppa:linrunner/tlp
+    state: present
